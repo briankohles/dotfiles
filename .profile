@@ -18,7 +18,7 @@ ssh-add -K ~/.ssh/id_rsa
 set -o vi
 
 # set prompt to include GIT branch
-#export PS1='[\[$(tput bold)\]\u@\h\[$(tput bold)\] \[$(tput setaf 2)\]`whichBranch` \[$(tput sgr0)\] \w]\n\$ '
+export PS1='[\[$(tput bold)\]\u@\h\[$(tput bold)\] \[$(tput setaf 2)\]`~/bin/whichBranch` \[$(tput sgr0)\] \w]\n\$ '
 
 alias pytest='python3 /Volumes/Data_2TB/Users/briankohles/Library/Python/2.7/lib/python/site-packages/pytest.py'
 

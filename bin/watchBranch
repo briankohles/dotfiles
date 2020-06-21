@@ -1,0 +1,11 @@
+#!/bin/sh
+G=`git branch 2>&1 | egrep -i '(^\*)|Not a git'`
+NB=`echo $G | grep "Not a git repository" | wc -l`
+if [ $NB -eq 1 ]; then
+   echo "nab"
+else
+   #echo $G
+   #if [`${#G}` -gt 15]; then
+      echo "*"${G:${#G} - 14}
+   #fi
+fi
